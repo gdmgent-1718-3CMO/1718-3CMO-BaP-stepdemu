@@ -30,22 +30,21 @@ h3, h4, h5, h6 {
 }
 a {
     text-decoration: none;
-    color: $body-link;
-    border-bottom: dotted 1px $body-link;
+    color: $mycolor-1;
     &:hover{
-        color: $body-link;
+        color: $mycolor-1;
         text-decoration: none;
-        border-bottom: solid 1px $body-link;
+        font-weight: 800;
     }
     &:active{
         background-color: $body-link;
-        color: $color-white;
+        color: $mycolor-1;
     }
     &:focus{}
 }
 blockquote {
     padding-left: 24px;
-    border-left: 2px solid $mycolor-5;
+    border-left: 2px solid $mycolor-1;
 }
 
 // ongeordende lijstjes met een ander symbool of kleur
@@ -58,7 +57,7 @@ main ul {
     text-indent: -25px;
     &:before {
         content:'\2022';
-        color: $mycolor-5;
+        color: $mycolor-1;
         margin-right: 18px;
     }    
   }
@@ -76,13 +75,13 @@ main ol {
       margin-bottom: 0.5rem;
       &:before {
         counter-increment: i;
-        content: counter(i);    
+        content: counter(i)".";
         padding: 3px 6px;
         margin-right: 5px;
         border-radius: 5px;
-        background-color: $mycolor-5;
-        color: $color-white;
-        font-family: $myfont-family-title;
+        background-color: transparent;
+        color: $mycolor-2;
+        font-family: "Avenir LT Std 85 Heavy", serif;
         font-weight: $font-weight-bold;
       }    
     }

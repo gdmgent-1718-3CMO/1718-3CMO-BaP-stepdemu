@@ -13,9 +13,9 @@ $color-grey-5:rgba(10,10,10,1);
 $color-black:rgba(0,0,0,1);
 
 // Website
-$mycolor-1:rgba(162,139,119,1);
-$mycolor-2:rgba(80,69,57,1);
-$mycolor-3:rgba(193,173,121,1);
+$mycolor-1:rgb(233,68,62); /* primair kleur rood */
+$mycolor-2:rgba(63,187,204,1); /* fel blauw */
+$mycolor-3:rgba(211,243,238,1); /* licht blauw */
 $mycolor-4:rgba(147,131,86,1);
 $mycolor-5:rgba(155,59,29,1);
 
@@ -38,13 +38,60 @@ $clientcolor-5:rgba(250,120,120,1);
 // Imports
 // Website
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Baloo');
 
 // Client specific
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+
+@font-face {
+    font-family: 'Avenir LT Std 95 Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 95 Black'), url('./AvenirLTStd-Black.woff') format('woff');
+    };
+
+@font-face {
+    font-family: 'Avenir LT Std 45 Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 45 Book'), url('./AvenirLTStd-Book.woff') format('woff');
+    };
+        
+        
+@font-face {
+    font-family: 'Avenir LT Std 85 Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 85 Heavy'), url('./AvenirLTStd-Heavy.woff') format('woff');
+    };
+        
+        
+@font-face {
+        font-family: 'Avenir LT Std 35 Light';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Avenir LT Std 35 Light'), url('./AvenirLTStd-Light.woff') format('woff');
+        };
+        
+@font-face {
+        font-family: 'Avenir LT Std 65 Medium';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Avenir LT Std 65 Medium'), url('./AvenirLTStd-Medium.woff') format('woff');
+        };
+        
+        
+@font-face {
+        font-family: 'Avenir LT Std 55 Roman';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Avenir LT Std 55 Roman'), url('./AvenirLTStd-Roman.woff') format('woff');
+        };
 
 // type
-$myfont-family-base: 'Raleway', serif;
-$myfont-family-title: $myfont-family-base;
+$myfont-family-base: 'Avenir LT Std 35 Light', serif;
+$myfont-family-title: 'Baloo', serif;
 
 // sizes
 $font-size-base: 16px;
@@ -58,7 +105,7 @@ $font-weight-bold: 800;
 //------------------------------
 
 // type
-$clientfont-family-base: 'Raleway', serif;
+$clientfont-family-base: 'Avenir LT Std 35 Light', serif;
 $clientfont-family-title: $myfont-family-base;
 
 // sizes

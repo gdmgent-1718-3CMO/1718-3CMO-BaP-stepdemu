@@ -1,14 +1,169 @@
-/* Navigation
----------------------------------------------
-*/
+// MAIN //
+h1 {
+    color: $mycolor-1;
+}
+
+h2 {
+    color: $mycolor-2;
+    font-family: "Avenir LT Std 95 Black", serif;
+}
+
+h3 {
+    font-family: "Avenir LT Std 85 Heavy", serif;
+}
+
+strong {
+    color: $mycolor-2;
+    font-family: "Avenir LT Std 85 Heavy", serif;
+    font-weight: 800;
+}
+
+main.col-12.col-md-6.col-lg-8.order-md-1.pt-5.navonderkant{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+span.navbar-toggler-icon {
+    color: white !important;
+    }
+
+nav[data-toggle=toc] .nav>li>a:hover { /* kleur subnav rechts */
+    color: $mycolor-1;
+}
+
+// NAVBAR //
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+#navbar-red {
+   background-color: $mycolor-1;
+   padding: 0;
+   margin-right: 0;
+}
+
 .navbar a {
     border: none;
 }
 
-/* FOOTER
-----------------------------------------------
-sticked to the bottom with small content pages
-*/
+.navonderkant {
+   padding-bottom: 50px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-family: "Avenir LT Std 85 Heavy",serif;
+    color: white;
+}
+
+.dropdown-menu {
+   background-color: transparent;
+   border: none;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+   background-color: $mycolor-3;
+   color: $mycolor-1;
+}
+
+.dropdown-item {
+   color: #fff;
+}
+
+.dropdown-item:hover {
+   color: #fff;
+   background-color: $mycolor-2;
+}
+
+.nav-link:hover {
+    background-color: $mycolor-2;
+    color: #fff;
+}
+
+.nav-link:active {
+   background-color: $mycolor-2;
+   color: #fff;
+}
+
+// LOGO //
+
+.center {
+    text-align: center;
+}
+
+.kleurenlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#boundingbox {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+// DOWNLOADS //
+
+.btn-primary {
+    background-color: $mycolor-2;
+    border-color: transparent;
+}
+
+.btn-primary:hover {
+    background-color: $mycolor-3;
+    color: $mycolor-1;
+    border-color: transparent;
+}
+
+button.btn.btn-primary.btn-lg {
+    width: 200px;
+}
+
+
+// FOOTER //
+footer {
+    padding-right: 8.5%;
+    padding-left: 8.5%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    clear: both;
+    margin-top: 0;
+}
+
+a {
+    border-bottom: none;
+}
+
+footer p, footer a {
+    font-size: 14px;
+    line-height: 2em;
+}
+
+.footer-center a, .footer-center a:visited {
+    text-decoration: none;
+    color: $mycolor-1;
+}
+
+.footer-center a:hover {
+    font-weight: 600;
+}
+
+.footerlogo {
+    width: 60%;
+}
+
+.footer-center {
+    padding-top: 20px;
+}
+
+.footer-left {
+    padding-top: 20px;
+}
+
+/* sticked to the bottom with small content pages */
 html {
     height: 100%;
   }
@@ -16,31 +171,29 @@ html {
 body {
     position: relative;
     margin: 0;
-    padding-bottom: 6rem;
     min-height: 100%;
+    padding: 0;
   }
 
 .bh-absolute-bottom {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 footer {
-    background-color: $mycolor-2;
-    color: $color-white;
+    background-color: $mycolor-3;
+    color: #000;
     a {
-        color: $color-white;
-        &:hover {
-            
+        color: #000;
+        &:hover { 
         }
     }
 }
 
-/* BACK TO TOP
--------------------------
-*/
+
+// BACK TO TOP //
 #to-top {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -49,7 +202,7 @@ footer {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color:$mycolor-3; /* Set a background color */
+  background-color:$mycolor-2; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   //padding: 15px; /* Some padding */
@@ -58,6 +211,15 @@ footer {
   border-radius: 20px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
   &:hover {
-    background-color:$mycolor-5; 
+    background-color:$mycolor-3; 
   }
+}
+
+
+// MEDIA QUERIES //
+@media (min-width: 768px) {
+  .navbar {
+      position: fixed;
+  }
+
 }

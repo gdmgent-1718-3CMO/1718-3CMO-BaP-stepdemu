@@ -7,20 +7,27 @@
   permalink: /index 
   # fa-icon: icon-info
 
-- name: Logo
-  description: Logo
-  folder: pages/logo/
-  permalink: logo/
+- name: Identiteit
+  description: Identiteit
+  folder: pages/identiteit/
+  permalink: identiteit/
   # fa-icon: icon-graduation-cap
 
-- name: Kleur
-  description: Kleur
-  folder: pages/kleur/
-  permalink: kleur/
+
+- name: Producten
+  description: Producten
+  folder: pages/producten/
+  permalink: producten/
+  # fa-icon: icon-graduation-cap
+
+- name: Downloads
+  description: Downloads
+  # folder: pages/downloads/
+  permalink: downloads/
   # fa-icon: icon-info
 
-- name: Styleguide
-  description: Stijlgids voor de Huistijlgids
+#- name: Styleguide
+  #description: Stijlgids voor de Huistijlgids
   # folder: pages/stijlgids
-  permalink: /stijlgids
+  #permalink: /stijlgids
   # fa-icon: icon-info
